@@ -4,7 +4,7 @@
 
       "target_date": null,
       "max_depth": 1000,
-      "extent": [[-30, -90], [46, -18]],
+      "extent": [[-55, -90], [46, -18]],
       "GPS_coords": [[-30, -42], [-25, -35], [-20, -35], [-15, -32.5], [-10, -30], [0, -22.5], [7.5, -30], [10, -40], [25, -60], [34, -75.75], [38, -72], [41.240, -70.958]],
 
       "glider_id": null,
@@ -25,10 +25,10 @@
     },
     "PRODUCT": {
       "create_magnitude_plot": false,
-      "create_threshold_plot": false,
+      "create_threshold_plot": true,
       "create_advantage_plot": false,
       "create_profile_plot": false,
-      "create_gpkg_file": false,
+      "create_gpkg_file": true,
 
       "latitude_qc": 0,
       "longitude_qc": 0,
@@ -43,7 +43,7 @@
       "show_waypoints": true,
       "show_eez": true,
       "show_qc": false,
-      "manual_extent": null,
+      "manual_extent": [[-40, -90], [46, -18]],
 
       "compute_optimal_path": true
     },

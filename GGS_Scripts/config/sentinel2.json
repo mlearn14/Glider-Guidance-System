@@ -25,10 +25,10 @@
     },
     "PRODUCT": {
       "create_magnitude_plot": false,
-      "create_threshold_plot": false,
+      "create_threshold_plot": true,
       "create_advantage_plot": false,
       "create_profile_plot": false,
-      "create_gpkg_file": false,
+      "create_gpkg_file": true,
 
       "latitude_qc": -6,
       "longitude_qc": 0,
@@ -52,7 +52,7 @@
       "eez_path": "data/eez/eez_boundaries_v12.shp"
     },
     "ADVANCED": {
-      "reprocess": true
+      "reprocess": false
     }
   }
   

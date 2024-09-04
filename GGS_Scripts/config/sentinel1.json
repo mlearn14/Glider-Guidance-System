@@ -24,11 +24,11 @@
       "save_bin_average": false
     },
     "PRODUCT": {
-      "create_magnitude_plot": false,
+      "create_magnitude_plot": true,
       "create_threshold_plot": true,
-      "create_advantage_plot": false,
-      "create_profile_plot": false,
-      "create_gpkg_file": false,
+      "create_advantage_plot": true,
+      "create_profile_plot": true,
+      "create_gpkg_file": true,
 
       "latitude_qc": 39,
       "longitude_qc": -69,
@@ -52,7 +52,7 @@
       "eez_path": "data/eez/eez_boundaries_v12.shp"
     },
     "ADVANCED": {
-      "reprocess": false
+      "reprocess": true
     }
   }
   
