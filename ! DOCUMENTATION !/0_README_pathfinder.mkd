@@ -1,17 +1,20 @@
 # Glider Guidance System (GGS) Pathfinding Algorithm Documentation
 
 ## Overview
+
 This algorithm is designed to compute the optimal path for an underwater glider, taking into account depth-averaged ocean currents (DAC) and other navigational factors. It uses a modified version of the A* search algorithm to determine the most efficient path between specified waypoints based on the DAC data.
 
 ## Algorithm Code Structure
 
 ### Inputs
+
 - `config`: A dictionary containing mission configuration details including waypoints in the form of GPS coordinates.
 - `directory`: The path to the directory where output statistics files will be saved.
 - `model_dataset`: An `xarray.Dataset` containing depth-averaged ocean current data including east-west (`u`) and north-south (`v`) components.
 - `glider_raw_speed`: The base speed of the glider in meters per second, defaulting to 0.5 m/s.
 
 ### Helper Functions
+
 - `calculate_haversine_distance(longitude1, latitude1, longitude2, latitude2)`: Calculates the great circle distance between two points on the earth.
 - `calculate_direct_path(start_index, end_index, glider_raw_speed)`: Provides a direct path calculation in case no optimal path is found.
 - `convert_coord2grid(latitude, longitude)`: Converts geographical latitude and longitude into the nearest index on the dataset grid.
@@ -21,7 +24,9 @@ This algorithm is designed to compute the optimal path for an underwater glider,
 - `generate_neighbor_nodes(index)`: Yields neighboring nodes for exploration based on the current node's position.
 - `reconstruct_path(came_from_dictionary, start_index, goal_index)`: Reconstructs the path from start to end using the dictionary populated by the A* algorithm.
 - `algorithm_a_star(model_dataset, start_index, end_index, glider_raw_speed)`: Implements the A* algorithm to find the most efficient path.
+
 ### Output
+
 - `optimal_mission_path`: A list of tuples representing the latitude and longitude coordinates of the optimal route along the DAC grid.
 
 ## Algorithm Mathematical Approach

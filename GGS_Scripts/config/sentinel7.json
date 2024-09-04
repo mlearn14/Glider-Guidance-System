@@ -43,7 +43,7 @@
       "show_waypoints": true,
       "show_eez": true,
       "show_qc": false,
-      "manual_extent": [[-40, -90], [46, -18]],
+      "manual_extent":null,
 
       "compute_optimal_path": true
     },

@@ -2,10 +2,13 @@
 # Glider Guidance System (GGS) Configuration Guide
 
 ## Overview
+
 This guide provides details on configuring your GGS mission using the provided .json file. Each section of the configuration file is detailed below.
 
 ## MISSION Section
+
 This section outlines general settings for the mission.
+
 - **mission_name**: (String) The name of the mission.
 - **target_date**: (String) The target date for the mission data. Use `null` for the current date and time, or specify a date in the format `"YYYY-MM-DD HH:MM:SS"`.
 - **max_depth**: (Integer) The maximum depth for the mission in meters.
@@ -15,7 +18,9 @@ This section outlines general settings for the mission.
 - **glider_buffer**: (Float) The buffer value in decimal degrees used to create the extent around the target glider. Use `null` for None.
 
 ## MODEL Section
+
 This section configures the ocean model data settings.
+
 - **single_datetime**: (Boolean) Set to `true` to process a single date-time, `false` otherwise.
 - **enable_rtofs**: (Boolean) Set to `true` to enable the RTOFS model, `false` to disable.
 - **enable_cmems**: (Boolean) Set to `true` to enable the CMEMS model, `false` to disable.
@@ -26,7 +31,9 @@ This section configures the ocean model data settings.
 - **save_bin_average**: (Boolean) Set to `true` to save computed bin-average data, `false` otherwise.
 
 ## PRODUCT Section
+
 This section specifies product output settings.
+
 - **create_magnitude_plot**: (Boolean) Set to `true` to create magnitude plots, `false` otherwise.
 - **create_threshold_plot**: (Boolean) Set to `true` to create threshold zone plots, `false` otherwise.
 - **create_advantage_plot**: (Boolean) Set to `true` to create advantage zone plots, `false` otherwise.
@@ -44,9 +51,12 @@ This section specifies product output settings.
 - **manual_extent**: (Array of Arrays) Manual specification of plot extent, specified as `[[Min Lat, Min Lon], [Max Lat, Max Lon]]`. Use `null` for automatic.
 
 ## DATA Section
+
 This section defines paths to data resources used by GGS.
+
 - **bathymetry_path**: (String) Path to the bathymetry data file.
 - **eez_path**: (String) Path to the Exclusive Economic Zones (EEZ) shapefile.
 
 ## ADVANCED Section
+
 - **reprocess**: (Boolean) Set to `true` the reprocessing of netCDF files in the local '/data/reprocess' folder, `false` otherwise.

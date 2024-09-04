@@ -20,7 +20,7 @@
       "chunk": true,
 
       "save_model_data": false,
-      "save_depth_average": true,
+      "save_depth_average": false,
       "save_bin_average": false
     },
     "PRODUCT": {
@@ -52,7 +52,7 @@
       "eez_path": "data/eez/eez_boundaries_v12.shp"
     },
     "ADVANCED": {
-      "reprocess": true
+      "reprocess": false
     }
   }
   
